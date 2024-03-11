@@ -1,4 +1,5 @@
 package com.github.zipcodewilmington;
+import java.sql.PreparedStatement;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -15,9 +16,16 @@ public StringBuilder getWords(String[] n) {
     int random_Num = words(0.words.length-1);
     StringBuilder randomWord = new StringBuilder();
     randomWord.append(random_Num);
-    return randomWord;
-
+    return  randomWord;
 }
+
+public char[] startGame(String[] n) {
+    getWords(String[] n);
+    return
+}
+
+
+
 
 
 
