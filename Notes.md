@@ -12,7 +12,7 @@ And are NOT the same thing.
 You'll be creating a class called 'Wordguess'.
 The game chooses a word from an array (list) of words.
 
-```
+``
 words <- { "cat", "dog", "bog", "cut"}
 ```
 

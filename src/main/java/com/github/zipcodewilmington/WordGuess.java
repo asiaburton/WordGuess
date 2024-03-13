@@ -2,27 +2,33 @@ package com.github.zipcodewilmington;
 import java.sql.PreparedStatement;
 import java.util.Arrays;
 import java.util.Random;
-
+import java.util.Scanner;
 
 
 public class WordGuess {
- // Instance variable for Hangman game is an array of words for the player to guess
-    public String [] words = {"cheese", "run", "dance", "play"};
+
+ public static void main (String[] args) {
+     Scanner scanner = new Scanner(System.in);
+     Random random = new Random();
+
+
+    String[] wordlist = {"cheese", "run", "dance", "play"};
+    Integer randomNum = random.nextInt(wordlist.length);
+    String secretWord = wordlist[randomNum];
+    this.secretWord = secretWord.toCharArray();
+
+
+    char[] guess = new char[secretWord.toCharArray().length];
+    for(int i = 0; i <secretWord.toCharArray().length; i++) {
+        guess[i] = '_';
+    }
 
 
 
-  // Generate a word for the player to guess
-public StringBuilder getWords(String[] n) {
-    int random_Num = words(0.words.length-1);
-    StringBuilder randomWord = new StringBuilder();
-    randomWord.append(random_Num);
-    return  randomWord;
-}
+     }
 
-public char[] startGame(String[] n) {
-    getWords(String[] n);
-    return
-}
+
+ }
 
 
 
